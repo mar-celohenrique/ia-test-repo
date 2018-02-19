@@ -28,7 +28,7 @@ spring:
     store-type: redis
     redis:
       flush-mode: on_save
-      namespace: poc-spring
+      namespace: db0
   redis:
     host: localhost
     password:
