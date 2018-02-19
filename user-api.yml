@@ -9,3 +9,16 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 server:
   port: 8083
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ia-test
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgres.Driver
+    platform: posgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: POSTGRESQL
+    show-sql: true
