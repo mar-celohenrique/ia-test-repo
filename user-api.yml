@@ -9,6 +9,8 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 server:
   port: 8083
+  session:
+    timeout: 600
 
 spring:
   datasource:
@@ -22,3 +24,12 @@ spring:
       ddl-auto: create-drop
     database: POSTGRESQL
     show-sql: true
+  session:
+    store-type: redis
+    redis:
+      flush-mode: on_save
+      namespace: poc-spring
+  redis:
+    host: localhost
+    password:
+    port: 6379
