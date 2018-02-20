@@ -26,9 +26,6 @@ spring:
     show-sql: true
   session:
     store-type: redis
-    redis:
-      flush-mode: on_save
-      namespace: db0
   redis:
     host: localhost
     password:
